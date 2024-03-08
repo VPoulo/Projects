@@ -1,4 +1,4 @@
-## Blog Site - Written in Rust
+## Blog Site
 ### Course: Rust Programming
 
 #### Run Instructions
