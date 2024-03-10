@@ -1,34 +1,4 @@
-//Vaughn Poulo
-//CS202
-//Program 3
-//May 23, 2022
-//The concept class and its derived classes should be used if storing
-//information about programming concepts is desired. The base class holds
-//information about the core of a topic. There are three derviced classes,
-//which hold specific informtion about STL syntax, Modern C++ topics,
-//and the Python Library. The base class is a abstract base class, and 
-//has a structure that allows for dynamic binding to be used. Each class
-//has a function getInformation that prompts the user to fill in information.
-
-
 #include "concept.h"
-
-
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-//CONCEPT CLASS
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-
-concept::concept()
-{
-}
-
-
-concept::~concept()
-{
-}
-
 
 //Compares keyword of concepts for equality.
 bool concept::operator==(string matchKeyword)
@@ -212,7 +182,6 @@ void stl_syntax::display()
 
 
 
-//WHAT SHOULD THIS DO
 void stl_syntax::select()
 {
 	cout << endl;
