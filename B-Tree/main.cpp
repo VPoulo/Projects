@@ -1,15 +1,3 @@
-//Vaughn Poulo
-//CS202
-//Program 3
-//May 23, 2022
-//This client application fully tests the test plan because all functionality
-//of the program can be tested, regardless of the data structure behind the
-//program. The client application allows for the addition, removal, display,
-//and adjustment of the concept topics. If the data structure behind the program
-//were to change, the client application would not be aware, and the functinoality
-//of the new structure could be fully tested/
-
-
 //Proprocessor Directives
 #include "tree.h"
 
