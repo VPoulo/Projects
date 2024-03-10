@@ -1,23 +1,4 @@
-//Vaughn Poulo
-//CS202
-//Program 3
-//May 23, 2022
-//The tree class had a balanced 2-3 tree data structure. The structure
-//contains nodes, which point to the concept base class. The tree class
-//supports the removal, addition, display of instances of the concept class
-//and its derived classes. Dynamic binding is used to call functions in the
-//derived classes. The add method function is only applicable to two of the
-//three derived classes. Therefore, RTTI is used to determine if downcasting
-//is possible.
-
 #include "tree.h"
-
-
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-//NODE CLASS
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
 
 //Constructor.
 node23::node23()
@@ -32,35 +13,17 @@ node23::node23()
 }
 
 
-
-//Destructor.
-node23::~node23()
-{
-}
-
-
-
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-//TREE CLASS
-//////////////////////////////////////////////////////
-//////////////////////////////////////////////////////
-
-
 //Constructor.		
 tree::tree()
 {
 	root = nullptr;
 }
 
-
-
 //Destructor.
 tree::~tree()
 {
 	removeAll(root);
 }
-
 
 
 //Creates instance of class chosen by user and returns
@@ -85,7 +48,6 @@ void tree::createConcept(char conceptChoice, concept * & temp)
 
 	return;
 }
-
 
 
 //Wrapper function to add concept.
