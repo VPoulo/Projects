@@ -3,8 +3,9 @@
 
 #### Run Instructions
 
-1. 
+1. compile the code by running: g++ -std=c++17 *.cpp
 
-2. 
+2. execute the code in terinal by running: ./a.out 
 
-3. 
+
+
