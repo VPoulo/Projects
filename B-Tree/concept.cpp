@@ -181,7 +181,7 @@ void stl_syntax::display()
 	}
 }
 
-// WHAT SHOULD THIS DO
+
 void stl_syntax::select()
 {
 	cout << endl;
@@ -500,7 +500,7 @@ void python_library::display()
 	cout << endl;
 }
 
-// WHAT SHOULD THIS DO
+
 void python_library::select()
 {
 	cout << endl;
