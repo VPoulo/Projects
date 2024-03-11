@@ -6,9 +6,9 @@
 
 #### Run Instructions
 
-1. compile the code by running: g++ -std=c++17 *.cpp
+1. compile the code by running: <code>g++ -std=c++17 *.cpp</code>
 
-2. execute the code in terinal by running: ./a.out 
+2. execute the code in terinal by running: <code>./a.out</code>
 
 
 #### Description
