@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Directions</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Directions</h1>
+    <form action="{{ url_for('directions') }}" class="form" method=post>
+      <div style="display: flex; gap: 10px;">
+        <div>
+          <label for="origin" class="form-label">Origin:</label>
+          <input type="text" id="origin" class="form-input" name="origin" placeholder="Enter origin">
+        </div>
+        <div>
+          <label for="destination" class="form-label">Destination:</label>
+          <input type="text" id="destination" class="form-input" name="destination" placeholder="Enter destination">
+        </div>
+        <div>
+          <label for="dropdown" class="form-label dropdown">Language:</label>
+          <select id="dropdown" class="form-select" name="language">
+            <option value="de">German</option>
+            <option value="fr">French</option>
+            <option value="it">Italian</option>
+            <option value="es">Spanish</option>
+            <option value="ja">Japanese</option>
+            <option value="zh">Chinese</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" id="directions-button">Get Directions</button>
+    </form>
+    <div class="container">
+      <div class="left-half">
+        <h3>Original Directions</h3>
+        <div class="text-box">
+          {{ text.original | safe }}
+        </div>
+      </div>
+      <div class="right-half">
+        <h3>Translated Directions</h3>
+        <div class="text-box">
+          {{ text.translation | safe }}
+        </div>
+    </div>
+  </body>
+</html>
+
